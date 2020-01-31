@@ -51,9 +51,9 @@
             this.buttonPanel.Controls.Add(this.cancelButton);
             this.buttonPanel.Controls.Add(this.browseButton);
             this.buttonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonPanel.Location = new System.Drawing.Point(0, 128);
+            this.buttonPanel.Location = new System.Drawing.Point(0, 130);
             this.buttonPanel.Name = "buttonPanel";
-            this.buttonPanel.Size = new System.Drawing.Size(395, 58);
+            this.buttonPanel.Size = new System.Drawing.Size(420, 58);
             this.buttonPanel.TabIndex = 0;
             // 
             // okButton
@@ -107,7 +107,7 @@
             this.descriptionLabel.Location = new System.Drawing.Point(62, 22);
             this.descriptionLabel.MaximumSize = new System.Drawing.Size(350, 0);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(316, 30);
+            this.descriptionLabel.Size = new System.Drawing.Size(349, 40);
             this.descriptionLabel.TabIndex = 2;
             this.descriptionLabel.Text = "Type the name of a program, folder, document or Internet resource, and Windows wi" +
     "ll open it for you.";
@@ -118,7 +118,7 @@
             this.decorPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.decorPanel.Location = new System.Drawing.Point(0, 0);
             this.decorPanel.Name = "decorPanel";
-            this.decorPanel.Size = new System.Drawing.Size(395, 1);
+            this.decorPanel.Size = new System.Drawing.Size(420, 1);
             this.decorPanel.TabIndex = 0;
             // 
             // comboBox
@@ -129,7 +129,7 @@
             this.comboBox.FormattingEnabled = true;
             this.comboBox.Location = new System.Drawing.Point(51, 71);
             this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(335, 23);
+            this.comboBox.Size = new System.Drawing.Size(335, 28);
             this.comboBox.TabIndex = 0;
             this.comboBox.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             this.comboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBox1_KeyDown);
@@ -140,7 +140,7 @@
             this.openLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLabel.Location = new System.Drawing.Point(6, 74);
             this.openLabel.Name = "openLabel";
-            this.openLabel.Size = new System.Drawing.Size(39, 15);
+            this.openLabel.Size = new System.Drawing.Size(48, 20);
             this.openLabel.TabIndex = 4;
             this.openLabel.Text = "&Open:";
             // 
@@ -156,7 +156,7 @@
             this.adminCheckBox.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.adminCheckBox.Location = new System.Drawing.Point(65, 100);
             this.adminCheckBox.Name = "adminCheckBox";
-            this.adminCheckBox.Size = new System.Drawing.Size(261, 17);
+            this.adminCheckBox.Size = new System.Drawing.Size(310, 23);
             this.adminCheckBox.TabIndex = 5;
             this.adminCheckBox.Text = "Create this task with administrative privileges.";
             this.adminCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -166,11 +166,11 @@
             // Run
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(395, 186);
+            this.ClientSize = new System.Drawing.Size(420, 188);
             this.Controls.Add(this.adminCheckBox);
             this.Controls.Add(this.openLabel);
             this.Controls.Add(this.comboBox);

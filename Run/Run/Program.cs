@@ -17,17 +17,30 @@ namespace Run
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            SetProcessDPIAware();
 
-            if (args[0].ToLower() == "-justlaunch")
+            bool handled = false;
+
+            if (args.Count() > 0)
             {
-                Application.Run(new Run());
+                if (args[0].ToLower() == "-justlaunch")
+                {
+                    Application.Run(new Run());
+                    handled = true;
+                }
+
             }
-            else
+
+            if (!handled)
             {
-                
                 Application.Run(new Register());
             }
+
         }
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+
+        private static extern bool SetProcessDPIAware();
 
 
     }
